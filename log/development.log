@@ -1,0 +1,697 @@
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateVideos (20160413173045)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160413173045"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:44:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/sai/Desktop/APIGeek/app/controllers/api_geek_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_end):
+  app/controllers/api_geek_controller.rb:7: syntax error, unexpected tIVAR, expecting keyword_end
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.8ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.2ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:46:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::ActionNotFound (The action 'getVideo' could not be found for ApiGeekController):
+  actionpack (4.2.4) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.4) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.4) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.4) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.4) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/sai/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/sai/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/sai/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (1.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.0ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.8ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:46:29 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `hostname' for "confreaks.tv/api/v1/mwrc2010-archaeopteryx-lambdas-in-detail":String):
+  app/controllers/api_geek_controller.rb:6:in `getVideo'
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (66.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (3.8ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.9ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:46:49 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 555ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:47:21 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 426ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:50:04 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 543ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:56:45 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 500 Internal Server Error in 572ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `id' for #<Hash:0x007ff3d59f3668>):
+  app/controllers/api_geek_controller.rb:11:in `block in getVideo'
+  app/controllers/api_geek_controller.rb:10:in `each'
+  app/controllers/api_geek_controller.rb:10:in `getVideo'
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.5ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:57:07 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 460ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:57:49 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 477ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:58:02 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 529ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 10:58:22 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 200 OK in 454ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 11:01:54 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 500 Internal Server Error in 600ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `create' for APIGeek:Module):
+  app/controllers/api_geek_controller.rb:11:in `block in getVideo'
+  app/controllers/api_geek_controller.rb:10:in `each'
+  app/controllers/api_geek_controller.rb:10:in `getVideo'
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (118.3ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 11:02:52 -0700
+Processing by ApiGeekController#getVideo as HTML
+Completed 500 Internal Server Error in 462ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'title' for Video.):
+  app/controllers/api_geek_controller.rb:11:in `block in getVideo'
+  app/controllers/api_geek_controller.rb:10:in `each'
+  app/controllers/api_geek_controller.rb:10:in `getVideo'
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateVideos (20160413173045)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "video_id" integer, "title" text, "event" text, "abstract" text) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20160413173045"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mVideo Load (1.3ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 11:07:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApiGeekController#getVideo as HTML
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7127], ["title", "Build anything"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.417432"], ["updated_at", "2016-04-13 18:07:01.417432"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7194], ["title", "Validate Me"], ["event", "CSSConf EU 2014"], ["abstract", "As creatives we struggle with fair amount of self-doubt. How do we free ourselves from relying on external validation of our efforts? How do we fight impostor syndrome and confirmation bias? How do we prevent ourselves from falling into the burnout and depression pit, or more importantly how do we recover?\r\n\r\nLessons learned on cutting yourself some slack and surrounding yourself with people who will empower you to do so."], ["created_at", "2016-04-13 18:07:01.423538"], ["updated_at", "2016-04-13 18:07:01.423538"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7169], ["title", "Booting Docker Images over Bittorrent"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.426295"], ["updated_at", "2016-04-13 18:07:01.426295"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7134], ["title", "River trail. Parallel computing in JavaScript."], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.428823"], ["updated_at", "2016-04-13 18:07:01.428823"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7139], ["title", "JSConf 2012 Welcome Video"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.442325"], ["updated_at", "2016-04-13 18:07:01.442325"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 93], ["title", "The Grand Unified Theory..."], ["event", "Acts as Conference 2009"], ["created_at", "2016-04-13 18:07:01.444669"], ["updated_at", "2016-04-13 18:07:01.444669"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7129], ["title", "mojito your stuff runs on both sides"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.446792"], ["updated_at", "2016-04-13 18:07:01.446792"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 4626], ["title", "Hadoop in 5 Minutes or Less"], ["event", "Strata 2014"], ["abstract", "This five-minute keynote will provide a quick overview of some of the more surprising things Hadoop is capable of in 5 minutes or less.\r\n\r\nThis keynote is sponsored by MapR Technologies"], ["created_at", "2016-04-13 18:07:01.449072"], ["updated_at", "2016-04-13 18:07:01.449072"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7118], ["title", "How to prepare a distributed nodejs application"], ["event", "JSConf US2013"], ["abstract", "Ingredients:\r\n\r\n1x nodejs application, the bigger the better\r\nA handful of external services, AWS will do\r\nSome Cachaça or good Pálinka\r\nPreparation:\r\nWith a sharp eye slice open your server and remove its guts, put that aside ...\r\n\r\nKeyword soup: microframework for distributed nodejs applications with service discovery and remote dependency control."], ["created_at", "2016-04-13 18:07:01.451991"], ["updated_at", "2016-04-13 18:07:01.451991"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 4287], ["title", "Open vSwitch and its Usage in Neutron"], ["event", "OpenStack Summit Hong Kong 2013"], ["abstract", "Open vSwitch is used in neutron with the OpenvSwitch plugin and many other vendor plugins. But the cases to use Open vSwitch in production are rare. We are trying to help to use open vSwitch in production. This presentation will include: Open vSwitch in neutron the performance of Open vSwitch Open vSwitch in hardware "], ["created_at", "2016-04-13 18:07:01.455535"], ["updated_at", "2016-04-13 18:07:01.455535"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 3795], ["title", "Massive.js"], ["event", "Rio.JS Conf 2013"], ["created_at", "2016-04-13 18:07:01.458793"], ["updated_at", "2016-04-13 18:07:01.458793"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 574], ["title", "Ruby Makes You Happy"], ["event", "Scotland Ruby 2011"], ["abstract", "Ruby cultivates happiness by making it easier to implement our ideas, reducing the mental friction that some languages impose. We'll explore concepts and practical techniques to help you feel all warm and fuzzy inside when developing with Ruby."], ["created_at", "2016-04-13 18:07:01.463447"], ["updated_at", "2016-04-13 18:07:01.463447"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7136], ["title", "Politics (or how we all make a difference)"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.467094"], ["updated_at", "2016-04-13 18:07:01.467094"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7133], ["title", "Stranger in these parts. A hired gun in the js corral"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.470130"], ["updated_at", "2016-04-13 18:07:01.470130"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8104], ["title", "Juggling Children... and Rubies"], ["event", "Ancient City Ruby 2014"], ["abstract", "\"DAD! I'm hungry.\"\r\n\"DAD! Can you tie my shoes?\"\r\n\"HONEY! The baby needs a diaper change.\"\r\n\r\nHow do you balance all the distractions with raising children and still be able to deliver at your job? As Ruby developers, it's something that many of us can relate to but few really talk openly about. I work full-time at Engine Yard, create videos for Code TV, and also maintain RailsInstaller. All of that needs to balance nicely with my family and this talk will explore some of the problems I've faced and how I address them."], ["created_at", "2016-04-13 18:07:01.474463"], ["updated_at", "2016-04-13 18:07:01.474463"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 418], ["title", "How to Develop without Circling the Wagons"], ["event", "Mountain rb 2010"], ["abstract", "Pioneering in the Wild West of software can be scary, not to mention deadly. How can you use this fear to best the lurking dangers out there?"], ["created_at", "2016-04-13 18:07:01.477452"], ["updated_at", "2016-04-13 18:07:01.477452"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7128], ["title", "repl.it"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.479833"], ["updated_at", "2016-04-13 18:07:01.479833"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7171], ["title", "The Node Way"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.481879"], ["updated_at", "2016-04-13 18:07:01.481879"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 6290], ["title", "Mind Over Error"], ["event", "Ruby Conference 2015"], ["abstract", "Industries like aviation and power plants have improved their safety mechanisms using our growing understanding of the nature of human error, but have we kept up? How do we incorporate the ideas from Human Error, The Design of Everyday Things, and other great resources into what we build? I want to show you how to improve the safety of our systems by reducing their complexity and generating accurate mental models."], ["created_at", "2016-04-13 18:07:01.484285"], ["updated_at", "2016-04-13 18:07:01.484285"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7165], ["title", "Javascript Flow Control"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.486598"], ["updated_at", "2016-04-13 18:07:01.486598"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 2769], ["title", "Lightning Talk: The Increasing Need for Software Developers"], ["event", "Rocky Mountain Ruby 2013"], ["created_at", "2016-04-13 18:07:01.488899"], ["updated_at", "2016-04-13 18:07:01.488899"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 5775], ["title", "Ending Keynote "], ["event", "JSChannel 2015"], ["abstract", "TBD"], ["created_at", "2016-04-13 18:07:01.491075"], ["updated_at", "2016-04-13 18:07:01.491075"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 200], ["title", "Programming Intuition"], ["event", "Lone Star Ruby Conference 2009"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.493248"], ["updated_at", "2016-04-13 18:07:01.493248"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 8103], ["title", "Hack Me If You Can"], ["event", "Ancient City Ruby 2014"], ["abstract", "Security is important. Yet, it's where a lot of web developers have little to no experience. We'll look at a whole range of opportunistic attack vectors that can be used against web applications, and how we can protect us against them.\r\n\r\nThis talk will include one currently undisclosed attack (at the time of writing)."], ["created_at", "2016-04-13 18:07:01.495894"], ["updated_at", "2016-04-13 18:07:01.495894"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 6188], ["title", "Let's Continue to Talk About Pay"], ["event", "OSFeels 2015"], ["abstract", "On International Workers' Day I asked the world to #talkpay, and many people did. Pay transparency is critical in order to address pay inequity in our field, as well as others, but there's more to it than that. I'd like to discuss why this taboo surrounding pay got started, illustrate just how concerted of an effort there is to prevent workers (including tech workers) from pushing for higher pay, and why, exactly, we NEED to talk about pay."], ["created_at", "2016-04-13 18:07:01.498539"], ["updated_at", "2016-04-13 18:07:01.498539"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 8649], ["title", "<select>ing Good Ember Patterns"], ["event", "Ember Conf 2016"], ["abstract", "What's in an Ember <select> element? For a long time, the answer was two-way data binding, observers, and an obscured DOM, along with the challenges and bugs that went with it.\r\nToday, we can move beyond the {{view “select”}} helper and render this common UI element using native DOM and one-way data flow. Through the lens of the select element, both as standalone code and a re-usable component, we’ll learn how and why to use good Ember patterns like data-down, actions up (DDAU), plus some handy new Ember features like closure actions and the mut and {{get}} helpers."], ["created_at", "2016-04-13 18:07:01.501243"], ["updated_at", "2016-04-13 18:07:01.501243"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7163], ["title", "The Node Community and *You*"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.503490"], ["updated_at", "2016-04-13 18:07:01.503490"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7178], ["title", " I'm a Pretty Big Deal On the Internet"], ["event", "DHTMLConf  2000"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.506211"], ["updated_at", "2016-04-13 18:07:01.506211"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7176], ["title", "God's GIF to Web Design"], ["event", "DHTMLConf  2000"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.508555"], ["updated_at", "2016-04-13 18:07:01.508555"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 564], ["title", "Real Time Rack"], ["event", "Scotland Ruby 2011"], ["abstract", "At least since node.js everyone knows that real time HTTP responses are the next big thing. The secrets of handling incoming requests asynchronously with Ruby is not yet far spread among Rubyists, as the internals needed for such responses are neither specified nor documented and there is a lack of tools. Still, it is possible to use Server-Sent Events, WebSockets and akin with Rack today. This talk will demonstrate the underlying technologies and how to use them in your Ruby application"], ["created_at", "2016-04-13 18:07:01.512484"], ["updated_at", "2016-04-13 18:07:01.512484"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8148], ["title", "The internet of browsers"], ["event", "Full Stack Fest 2015"], ["abstract", "A talk from Full Stack Fest 2015 (http://fullstackfest.com/)\r\n\r\nBrowsers do more than just presenting content; they allow us to gather information about our surroundings and make changes to our environment.\r\n\r\nTaking inspiration from the Internet of Things, we’ll think about our browsers as simple objects that can work together to create a closer interaction with the web.\r\n\r\nWe’ll have some demos too.\r\n\r\nhttp://fullstackfest.com/agenda/the-i...\r\n\r\nRecorded & produced by El Cocu (http://elcocu.com)"], ["created_at", "2016-04-13 18:07:01.515049"], ["updated_at", "2016-04-13 18:07:01.515049"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 8704], ["title", "Colin Dixon & Tom Nadeau - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Colin Dixon & Tom Nadeau, Brocade, at OpenStack Summit 2015 with John Furrier\r\n\r\n@theCUBE\r\n#OpenStack"], ["created_at", "2016-04-13 18:07:01.517709"], ["updated_at", "2016-04-13 18:07:01.517709"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8896], ["title", "Hierarchical Port Binding in Practice: Experiences With At-Scale Production"], ["event", "OpenStack Summit Tokyo 2015"], ["abstract", "This talk will discuss our experiences deploying Hierarchical Port Binding in production and at scale.  We'll compare an existing OVS+VXLAN implementation with a newer HPB+VXLAN based implementation.  We'll talk about the benefits of the newer implementation, as well as the problems we ran into along the way."], ["created_at", "2016-04-13 18:07:01.520400"], ["updated_at", "2016-04-13 18:07:01.520400"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 5942], ["title", "Keynote "], ["event", "DjangoCon 2015"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.522866"], ["updated_at", "2016-04-13 18:07:01.522866"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 1887], ["title", "2D Physics with Chipmunk.jsx"], ["event", "Web Directions South 2012"], ["abstract", "Live screencast: learn how to use Chipmunk.js to create in-browser physics, and why it's good."], ["created_at", "2016-04-13 18:07:01.525709"], ["updated_at", "2016-04-13 18:07:01.525709"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7152], ["title", "Image Processing in JavaScript"], ["event", "Reject JS 2014"], ["abstract", "Basic Image Processing should be in every programmers toolbelt. Detecting faces? Image Processing. Measuring distances on screen? Image Processing. Following that red cloth with your NodeCopter? Image Processing. This talk will cover the rudiment techniques with demos and discuss powerful libraries to do the job."], ["created_at", "2016-04-13 18:07:01.528497"], ["updated_at", "2016-04-13 18:07:01.528497"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7142], ["title", "Ukulele Hero"], ["event", "Reject JS 2015"], ["abstract", "One of the things that make video games awesome is that you can use anything to make a game. One of the things that make being a web developer awesome is that you have a lot of amazing APIs at your disposal.\r\n\r\nWhy not combine both for maximum effect? Like using the Web Audio API to make your own music driven game using a real life ukulele as controller? I’d like to show you how, why and on top you’ll learn some music theory."], ["created_at", "2016-04-13 18:07:01.531218"], ["updated_at", "2016-04-13 18:07:01.531218"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 8708], ["title", "Mark Interrante - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Mark Interrante, HP Cloud, at Openstack Summit 2015 with John Furrier and Stu Miniman\r\n\r\n@theCUBE\r\n#openstack"], ["created_at", "2016-04-13 18:07:01.534077"], ["updated_at", "2016-04-13 18:07:01.534077"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7138], ["title", "Is Node.js Better?"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.537388"], ["updated_at", "2016-04-13 18:07:01.537388"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1272], ["title", "Implementation Details of Ruby 2.0 VM"], ["event", "Ruby Conference 2012"], ["abstract", "As a member of Matz's team in Heroku, I'm working Ruby 2.0 to be released in next February. Ruby 2.0 doesn't have drastic changes in behavior except adding some new features. However, an internal of Ruby 2.0 VM is changing to improve performance! For example, we changed VM data structures and method invocation processes to achieve fast execution. In this presentation, I will introduce the internal changes and its performance."], ["created_at", "2016-04-13 18:07:01.542211"], ["updated_at", "2016-04-13 18:07:01.542211"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 7312], ["title", "Easy Ruby On Rails deploy on Docker"], ["event", "DockerCon & Co"], ["abstract", "Nginx + Unicorn + foreman easy deploy Ruby On Rails\r\n- Docker hub image : https://registry.hub.docker.com/u/sea...\r\n- Github Dockerfile : https://github.com/seapy/dockerfiles/...\r\n- blog post(Korean) : http://seapy.com/2084"], ["created_at", "2016-04-13 18:07:01.545505"], ["updated_at", "2016-04-13 18:07:01.545505"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 8706], ["title", "Ryan Floyd - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Ryan Floyd, Storm Ventures, at OpenStack Summit 2015 with John Furrier and Stu Miniman\r\n\r\n@theCUBE\r\n#OpenStack"], ["created_at", "2016-04-13 18:07:01.548625"], ["updated_at", "2016-04-13 18:07:01.548625"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", 1683], ["title", "DevOps + Chef + Windows at Ancestry.com "], ["event", "Chef Conf 2012"], ["created_at", "2016-04-13 18:07:01.553357"], ["updated_at", "2016-04-13 18:07:01.553357"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 1184], ["title", "Lightning Talk - testing my leet codez"], ["event", "Ruby Conference 2008"], ["created_at", "2016-04-13 18:07:01.556088"], ["updated_at", "2016-04-13 18:07:01.556088"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8711], ["title", "2015 OpenStack Vancouver - VMTurbo – OpenStack – Views from the market and reactions from the com"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", ""], ["created_at", "2016-04-13 18:07:01.559295"], ["updated_at", "2016-04-13 18:07:01.559295"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 8702], ["title", "Faiyaz Shahpurwala - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Faiyaz Shahpurwala, Cisco, at OpenStack Summit 2015 with John Furrier and Stu Miniman\r\n\r\n@theCUBE\r\n#OpenStack"], ["created_at", "2016-04-13 18:07:01.562127"], ["updated_at", "2016-04-13 18:07:01.562127"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 5873], ["title", "Keynote: The Soul of Software"], ["event", "Tropical Ruby Conference 2015"], ["abstract", "Talk presented on March 7, 2015 at the Tropical Ruby 2015 conference, in Porto de Galinhas, Brazil. Watch more talks at http://tropicalrb.com/videos\r\n\r\nThis video is licensed under a Creative Commons Attribution ShareAlike 3.0 (http://creativecommons.org/licenses/b...)."], ["created_at", "2016-04-13 18:07:01.567709"], ["updated_at", "2016-04-13 18:07:01.567709"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 5840], ["title", "Brisket Programming"], ["event", "Lone Star Ruby Conference 2015"], ["abstract", "A juicy, melt in your mouth brisket. A beautifully orchestrated application. These don't just happen. They take experience, which is evolutionary. I have a technique for smoking a brisket, born out of iteration and experimentation, that makes a pretty good brisket. Software development and cooking have a lot in common. I'll tell you about my brisket, but really I'll talk about learning to process information quicker and more efficiently. This not only gives answers a place to land, but tastes good too."], ["created_at", "2016-04-13 18:07:01.577464"], ["updated_at", "2016-04-13 18:07:01.577464"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "videos" ("id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 5346], ["title", "Speed Science"], ["event", "RailsConf 2015"], ["abstract", "Run your app faster, with less RAM and a quicker boot time today. How? With science! In this talk we'll focus on the process of turning performance problems into reproducible bugs we can understand and squash. We'll look at real world use cases where small changes resulted in huge real world performance gains. You'll walk away with concrete and actionable advice to improve the speed of your app, and with the tools to equip your app for a lifetime of speed. Live life in the fast lane, with science!\r\n"], ["created_at", "2016-04-13 18:07:01.584931"], ["updated_at", "2016-04-13 18:07:01.584931"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["id", 53], ["title", "Practical Puppet: Systems Building Systems"], ["event", "MountainWest RubyConf 2009"], ["created_at", "2016-04-13 18:07:01.588478"], ["updated_at", "2016-04-13 18:07:01.588478"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 751ms (Views: 0.2ms | ActiveRecord: 66.5ms)
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateVideos (20160413173045)
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateVideos (20160413173045)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "videos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "video_id" integer, "title" text, "event" text, "abstract" text) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160413173045"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 11:18:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/Users/sai/Desktop/APIGeek/app/controllers/api_geek_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/api_geek_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.2ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.1ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/sai/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (103.4ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 11:18:45 -0700
+Processing by ApiGeekController#getVideo as HTML
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7127]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7127], ["title", "Build anything"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.301056"], ["updated_at", "2016-04-13 18:18:46.301056"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7194]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7194], ["title", "Validate Me"], ["event", "CSSConf EU 2014"], ["abstract", "As creatives we struggle with fair amount of self-doubt. How do we free ourselves from relying on external validation of our efforts? How do we fight impostor syndrome and confirmation bias? How do we prevent ourselves from falling into the burnout and depression pit, or more importantly how do we recover?\r\n\r\nLessons learned on cutting yourself some slack and surrounding yourself with people who will empower you to do so."], ["created_at", "2016-04-13 18:18:46.305798"], ["updated_at", "2016-04-13 18:18:46.305798"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7169]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7169], ["title", "Booting Docker Images over Bittorrent"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.309162"], ["updated_at", "2016-04-13 18:18:46.309162"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7134]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7134], ["title", "River trail. Parallel computing in JavaScript."], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.312363"], ["updated_at", "2016-04-13 18:18:46.312363"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7139]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7139], ["title", "JSConf 2012 Welcome Video"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.315633"], ["updated_at", "2016-04-13 18:18:46.315633"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 93]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["video_id", 93], ["title", "The Grand Unified Theory..."], ["event", "Acts as Conference 2009"], ["created_at", "2016-04-13 18:18:46.318788"], ["updated_at", "2016-04-13 18:18:46.318788"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7129]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7129], ["title", "mojito your stuff runs on both sides"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.322164"], ["updated_at", "2016-04-13 18:18:46.322164"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 4626]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 4626], ["title", "Hadoop in 5 Minutes or Less"], ["event", "Strata 2014"], ["abstract", "This five-minute keynote will provide a quick overview of some of the more surprising things Hadoop is capable of in 5 minutes or less.\r\n\r\nThis keynote is sponsored by MapR Technologies"], ["created_at", "2016-04-13 18:18:46.325293"], ["updated_at", "2016-04-13 18:18:46.325293"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7118]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7118], ["title", "How to prepare a distributed nodejs application"], ["event", "JSConf US2013"], ["abstract", "Ingredients:\r\n\r\n1x nodejs application, the bigger the better\r\nA handful of external services, AWS will do\r\nSome Cachaça or good Pálinka\r\nPreparation:\r\nWith a sharp eye slice open your server and remove its guts, put that aside ...\r\n\r\nKeyword soup: microframework for distributed nodejs applications with service discovery and remote dependency control."], ["created_at", "2016-04-13 18:18:46.329279"], ["updated_at", "2016-04-13 18:18:46.329279"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 4287]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 4287], ["title", "Open vSwitch and its Usage in Neutron"], ["event", "OpenStack Summit Hong Kong 2013"], ["abstract", "Open vSwitch is used in neutron with the OpenvSwitch plugin and many other vendor plugins. But the cases to use Open vSwitch in production are rare. We are trying to help to use open vSwitch in production. This presentation will include: Open vSwitch in neutron the performance of Open vSwitch Open vSwitch in hardware "], ["created_at", "2016-04-13 18:18:46.336280"], ["updated_at", "2016-04-13 18:18:46.336280"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 3795]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["video_id", 3795], ["title", "Massive.js"], ["event", "Rio.JS Conf 2013"], ["created_at", "2016-04-13 18:18:46.341836"], ["updated_at", "2016-04-13 18:18:46.341836"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 574]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 574], ["title", "Ruby Makes You Happy"], ["event", "Scotland Ruby 2011"], ["abstract", "Ruby cultivates happiness by making it easier to implement our ideas, reducing the mental friction that some languages impose. We'll explore concepts and practical techniques to help you feel all warm and fuzzy inside when developing with Ruby."], ["created_at", "2016-04-13 18:18:46.345627"], ["updated_at", "2016-04-13 18:18:46.345627"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7136]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7136], ["title", "Politics (or how we all make a difference)"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.349623"], ["updated_at", "2016-04-13 18:18:46.349623"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7133]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7133], ["title", "Stranger in these parts. A hired gun in the js corral"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.353675"], ["updated_at", "2016-04-13 18:18:46.353675"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8104]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8104], ["title", "Juggling Children... and Rubies"], ["event", "Ancient City Ruby 2014"], ["abstract", "\"DAD! I'm hungry.\"\r\n\"DAD! Can you tie my shoes?\"\r\n\"HONEY! The baby needs a diaper change.\"\r\n\r\nHow do you balance all the distractions with raising children and still be able to deliver at your job? As Ruby developers, it's something that many of us can relate to but few really talk openly about. I work full-time at Engine Yard, create videos for Code TV, and also maintain RailsInstaller. All of that needs to balance nicely with my family and this talk will explore some of the problems I've faced and how I address them."], ["created_at", "2016-04-13 18:18:46.359397"], ["updated_at", "2016-04-13 18:18:46.359397"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 418]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 418], ["title", "How to Develop without Circling the Wagons"], ["event", "Mountain rb 2010"], ["abstract", "Pioneering in the Wild West of software can be scary, not to mention deadly. How can you use this fear to best the lurking dangers out there?"], ["created_at", "2016-04-13 18:18:46.362330"], ["updated_at", "2016-04-13 18:18:46.362330"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7128]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7128], ["title", "repl.it"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.365569"], ["updated_at", "2016-04-13 18:18:46.365569"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7171]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7171], ["title", "The Node Way"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.368649"], ["updated_at", "2016-04-13 18:18:46.368649"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 6290]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 6290], ["title", "Mind Over Error"], ["event", "Ruby Conference 2015"], ["abstract", "Industries like aviation and power plants have improved their safety mechanisms using our growing understanding of the nature of human error, but have we kept up? How do we incorporate the ideas from Human Error, The Design of Everyday Things, and other great resources into what we build? I want to show you how to improve the safety of our systems by reducing their complexity and generating accurate mental models."], ["created_at", "2016-04-13 18:18:46.372031"], ["updated_at", "2016-04-13 18:18:46.372031"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7165]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7165], ["title", "Javascript Flow Control"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.376860"], ["updated_at", "2016-04-13 18:18:46.376860"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 2769]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["video_id", 2769], ["title", "Lightning Talk: The Increasing Need for Software Developers"], ["event", "Rocky Mountain Ruby 2013"], ["created_at", "2016-04-13 18:18:46.380280"], ["updated_at", "2016-04-13 18:18:46.380280"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5775]]
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 5775], ["title", "Ending Keynote "], ["event", "JSChannel 2015"], ["abstract", "TBD"], ["created_at", "2016-04-13 18:18:46.387609"], ["updated_at", "2016-04-13 18:18:46.387609"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 200]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 200], ["title", "Programming Intuition"], ["event", "Lone Star Ruby Conference 2009"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.391704"], ["updated_at", "2016-04-13 18:18:46.391704"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8103]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8103], ["title", "Hack Me If You Can"], ["event", "Ancient City Ruby 2014"], ["abstract", "Security is important. Yet, it's where a lot of web developers have little to no experience. We'll look at a whole range of opportunistic attack vectors that can be used against web applications, and how we can protect us against them.\r\n\r\nThis talk will include one currently undisclosed attack (at the time of writing)."], ["created_at", "2016-04-13 18:18:46.398442"], ["updated_at", "2016-04-13 18:18:46.398442"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.4ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 6188]]
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 6188], ["title", "Let's Continue to Talk About Pay"], ["event", "OSFeels 2015"], ["abstract", "On International Workers' Day I asked the world to #talkpay, and many people did. Pay transparency is critical in order to address pay inequity in our field, as well as others, but there's more to it than that. I'd like to discuss why this taboo surrounding pay got started, illustrate just how concerted of an effort there is to prevent workers (including tech workers) from pushing for higher pay, and why, exactly, we NEED to talk about pay."], ["created_at", "2016-04-13 18:18:46.411039"], ["updated_at", "2016-04-13 18:18:46.411039"]]
+  [1m[36m (15.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8649]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8649], ["title", "<select>ing Good Ember Patterns"], ["event", "Ember Conf 2016"], ["abstract", "What's in an Ember <select> element? For a long time, the answer was two-way data binding, observers, and an obscured DOM, along with the challenges and bugs that went with it.\r\nToday, we can move beyond the {{view “select”}} helper and render this common UI element using native DOM and one-way data flow. Through the lens of the select element, both as standalone code and a re-usable component, we’ll learn how and why to use good Ember patterns like data-down, actions up (DDAU), plus some handy new Ember features like closure actions and the mut and {{get}} helpers."], ["created_at", "2016-04-13 18:18:46.441147"], ["updated_at", "2016-04-13 18:18:46.441147"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7163]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7163], ["title", "The Node Community and *You*"], ["event", "NodeConf 2014"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.445051"], ["updated_at", "2016-04-13 18:18:46.445051"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7178]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7178], ["title", " I'm a Pretty Big Deal On the Internet"], ["event", "DHTMLConf  2000"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.448785"], ["updated_at", "2016-04-13 18:18:46.448785"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7176]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7176], ["title", "God's GIF to Web Design"], ["event", "DHTMLConf  2000"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.452369"], ["updated_at", "2016-04-13 18:18:46.452369"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 564]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 564], ["title", "Real Time Rack"], ["event", "Scotland Ruby 2011"], ["abstract", "At least since node.js everyone knows that real time HTTP responses are the next big thing. The secrets of handling incoming requests asynchronously with Ruby is not yet far spread among Rubyists, as the internals needed for such responses are neither specified nor documented and there is a lack of tools. Still, it is possible to use Server-Sent Events, WebSockets and akin with Rack today. This talk will demonstrate the underlying technologies and how to use them in your Ruby application"], ["created_at", "2016-04-13 18:18:46.456547"], ["updated_at", "2016-04-13 18:18:46.456547"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8148]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8148], ["title", "The internet of browsers"], ["event", "Full Stack Fest 2015"], ["abstract", "A talk from Full Stack Fest 2015 (http://fullstackfest.com/)\r\n\r\nBrowsers do more than just presenting content; they allow us to gather information about our surroundings and make changes to our environment.\r\n\r\nTaking inspiration from the Internet of Things, we’ll think about our browsers as simple objects that can work together to create a closer interaction with the web.\r\n\r\nWe’ll have some demos too.\r\n\r\nhttp://fullstackfest.com/agenda/the-i...\r\n\r\nRecorded & produced by El Cocu (http://elcocu.com)"], ["created_at", "2016-04-13 18:18:46.459532"], ["updated_at", "2016-04-13 18:18:46.459532"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8704]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8704], ["title", "Colin Dixon & Tom Nadeau - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Colin Dixon & Tom Nadeau, Brocade, at OpenStack Summit 2015 with John Furrier\r\n\r\n@theCUBE\r\n#OpenStack"], ["created_at", "2016-04-13 18:18:46.462664"], ["updated_at", "2016-04-13 18:18:46.462664"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8896]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8896], ["title", "Hierarchical Port Binding in Practice: Experiences With At-Scale Production"], ["event", "OpenStack Summit Tokyo 2015"], ["abstract", "This talk will discuss our experiences deploying Hierarchical Port Binding in production and at scale.  We'll compare an existing OVS+VXLAN implementation with a newer HPB+VXLAN based implementation.  We'll talk about the benefits of the newer implementation, as well as the problems we ran into along the way."], ["created_at", "2016-04-13 18:18:46.465362"], ["updated_at", "2016-04-13 18:18:46.465362"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5942]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 5942], ["title", "Keynote "], ["event", "DjangoCon 2015"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.468968"], ["updated_at", "2016-04-13 18:18:46.468968"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 1887]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 1887], ["title", "2D Physics with Chipmunk.jsx"], ["event", "Web Directions South 2012"], ["abstract", "Live screencast: learn how to use Chipmunk.js to create in-browser physics, and why it's good."], ["created_at", "2016-04-13 18:18:46.472863"], ["updated_at", "2016-04-13 18:18:46.472863"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7152]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7152], ["title", "Image Processing in JavaScript"], ["event", "Reject JS 2014"], ["abstract", "Basic Image Processing should be in every programmers toolbelt. Detecting faces? Image Processing. Measuring distances on screen? Image Processing. Following that red cloth with your NodeCopter? Image Processing. This talk will cover the rudiment techniques with demos and discuss powerful libraries to do the job."], ["created_at", "2016-04-13 18:18:46.477981"], ["updated_at", "2016-04-13 18:18:46.477981"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7142]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7142], ["title", "Ukulele Hero"], ["event", "Reject JS 2015"], ["abstract", "One of the things that make video games awesome is that you can use anything to make a game. One of the things that make being a web developer awesome is that you have a lot of amazing APIs at your disposal.\r\n\r\nWhy not combine both for maximum effect? Like using the Web Audio API to make your own music driven game using a real life ukulele as controller? I’d like to show you how, why and on top you’ll learn some music theory."], ["created_at", "2016-04-13 18:18:46.481454"], ["updated_at", "2016-04-13 18:18:46.481454"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8708]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8708], ["title", "Mark Interrante - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Mark Interrante, HP Cloud, at Openstack Summit 2015 with John Furrier and Stu Miniman\r\n\r\n@theCUBE\r\n#openstack"], ["created_at", "2016-04-13 18:18:46.492576"], ["updated_at", "2016-04-13 18:18:46.492576"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7138]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7138], ["title", "Is Node.js Better?"], ["event", "JSConf uS2012"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.496095"], ["updated_at", "2016-04-13 18:18:46.496095"]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 1272]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 1272], ["title", "Implementation Details of Ruby 2.0 VM"], ["event", "Ruby Conference 2012"], ["abstract", "As a member of Matz's team in Heroku, I'm working Ruby 2.0 to be released in next February. Ruby 2.0 doesn't have drastic changes in behavior except adding some new features. However, an internal of Ruby 2.0 VM is changing to improve performance! For example, we changed VM data structures and method invocation processes to achieve fast execution. In this presentation, I will introduce the internal changes and its performance."], ["created_at", "2016-04-13 18:18:46.499064"], ["updated_at", "2016-04-13 18:18:46.499064"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7312]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 7312], ["title", "Easy Ruby On Rails deploy on Docker"], ["event", "DockerCon & Co"], ["abstract", "Nginx + Unicorn + foreman easy deploy Ruby On Rails\r\n- Docker hub image : https://registry.hub.docker.com/u/sea...\r\n- Github Dockerfile : https://github.com/seapy/dockerfiles/...\r\n- blog post(Korean) : http://seapy.com/2084"], ["created_at", "2016-04-13 18:18:46.502539"], ["updated_at", "2016-04-13 18:18:46.502539"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8706]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8706], ["title", "Ryan Floyd - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Ryan Floyd, Storm Ventures, at OpenStack Summit 2015 with John Furrier and Stu Miniman\r\n\r\n@theCUBE\r\n#OpenStack"], ["created_at", "2016-04-13 18:18:46.507077"], ["updated_at", "2016-04-13 18:18:46.507077"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 1683]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["video_id", 1683], ["title", "DevOps + Chef + Windows at Ancestry.com "], ["event", "Chef Conf 2012"], ["created_at", "2016-04-13 18:18:46.510089"], ["updated_at", "2016-04-13 18:18:46.510089"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 1184]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["video_id", 1184], ["title", "Lightning Talk - testing my leet codez"], ["event", "Ruby Conference 2008"], ["created_at", "2016-04-13 18:18:46.512885"], ["updated_at", "2016-04-13 18:18:46.512885"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8711]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8711], ["title", "2015 OpenStack Vancouver - VMTurbo – OpenStack – Views from the market and reactions from the com"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", ""], ["created_at", "2016-04-13 18:18:46.515712"], ["updated_at", "2016-04-13 18:18:46.515712"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8702]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 8702], ["title", "Faiyaz Shahpurwala - OpenStack Summit 2015 - theCUBE"], ["event", "OpenStack Summit Vancouver 2015"], ["abstract", "Faiyaz Shahpurwala, Cisco, at OpenStack Summit 2015 with John Furrier and Stu Miniman\r\n\r\n@theCUBE\r\n#OpenStack"], ["created_at", "2016-04-13 18:18:46.518670"], ["updated_at", "2016-04-13 18:18:46.518670"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5873]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 5873], ["title", "Keynote: The Soul of Software"], ["event", "Tropical Ruby Conference 2015"], ["abstract", "Talk presented on March 7, 2015 at the Tropical Ruby 2015 conference, in Porto de Galinhas, Brazil. Watch more talks at http://tropicalrb.com/videos\r\n\r\nThis video is licensed under a Creative Commons Attribution ShareAlike 3.0 (http://creativecommons.org/licenses/b...)."], ["created_at", "2016-04-13 18:18:46.522132"], ["updated_at", "2016-04-13 18:18:46.522132"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5840]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 5840], ["title", "Brisket Programming"], ["event", "Lone Star Ruby Conference 2015"], ["abstract", "A juicy, melt in your mouth brisket. A beautifully orchestrated application. These don't just happen. They take experience, which is evolutionary. I have a technique for smoking a brisket, born out of iteration and experimentation, that makes a pretty good brisket. Software development and cooking have a lot in common. I'll tell you about my brisket, but really I'll talk about learning to process information quicker and more efficiently. This not only gives answers a place to land, but tastes good too."], ["created_at", "2016-04-13 18:18:46.525755"], ["updated_at", "2016-04-13 18:18:46.525755"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5346]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "abstract", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["video_id", 5346], ["title", "Speed Science"], ["event", "RailsConf 2015"], ["abstract", "Run your app faster, with less RAM and a quicker boot time today. How? With science! In this talk we'll focus on the process of turning performance problems into reproducible bugs we can understand and squash. We'll look at real world use cases where small changes resulted in huge real world performance gains. You'll walk away with concrete and actionable advice to improve the speed of your app, and with the tools to equip your app for a lifetime of speed. Live life in the fast lane, with science!\r\n"], ["created_at", "2016-04-13 18:18:46.529111"], ["updated_at", "2016-04-13 18:18:46.529111"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 53]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "videos" ("video_id", "title", "event", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["video_id", 53], ["title", "Practical Puppet: Systems Building Systems"], ["event", "MountainWest RubyConf 2009"], ["created_at", "2016-04-13 18:18:46.532355"], ["updated_at", "2016-04-13 18:18:46.532355"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mVideo Load (0.3ms)[0m  SELECT "videos".* FROM "videos"
+Completed 200 OK in 840ms (Views: 13.8ms | ActiveRecord: 84.9ms)
+
+
+Started GET "/confVideo" for ::1 at 2016-04-13 11:19:10 -0700
+Processing by ApiGeekController#getVideo as HTML
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7127]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7194]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7169]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7134]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7139]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 93]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7129]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 4626]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7118]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 4287]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 3795]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 574]]
+  [1m[36mVideo Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7136]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7133]]
+  [1m[36mVideo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 8104]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 418]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7128]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7171]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 6290]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7165]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 2769]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5775]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 200]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8103]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 6188]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8649]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7163]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7178]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7176]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 564]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 8148]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8704]]
+  [1m[36mVideo Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 8896]]
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5942]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 1887]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 7152]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7142]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8708]]
+  [1m[36mVideo Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7138]]
+  [1m[35mVideo Exists (0.3ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 1272]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 7312]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8706]]
+  [1m[36mVideo Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 1683]]
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 1184]]
+  [1m[36mVideo Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 8711]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 8702]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 5873]]
+  [1m[35mVideo Exists (0.1ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 5840]]
+  [1m[36mVideo Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1[0m  [["video_id", 5346]]
+  [1m[35mVideo Exists (0.2ms)[0m  SELECT  1 AS one FROM "videos" WHERE "videos"."video_id" = ? LIMIT 1  [["video_id", 53]]
+  [1m[36mVideo Load (0.9ms)[0m  [1mSELECT "videos".* FROM "videos"[0m
+Completed 200 OK in 526ms (Views: 38.4ms | ActiveRecord: 6.5ms)
